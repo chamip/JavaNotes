@@ -15,6 +15,19 @@ public class Array {
         }
         System.out.println();
 
+        //oa==ob判断oa和ob是否管理同一个数组
+        int[] oa = {1,2,3,4,5};
+        int[] ob = {1,2,3,4,5};
+        System.out.println(oa==ob);
+
+        //创建新数组，并把一个数组拷贝到新数组
+        int[] a1 = {1,2,3,4,5,6};
+        int[] b1 = new int[a1.length];
+        for(int i=0;i<b1.length;i++){
+            b1[i] = a1[i];
+        }
+        System.out.println(a1==b1); // false
+
         Scanner in = new Scanner(System.in);
 
         //        System.out.print("请输入数值，-1表示结束：");
