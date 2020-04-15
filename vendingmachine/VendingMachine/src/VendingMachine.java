@@ -33,6 +33,8 @@ public class VendingMachine {
             System.out.println("Here you are.");
             balance = balance - price;
             total = total + price;
+        }else{
+            System.out.println("Your money is not enough!");
         }
     }
     public static void main(String[] args){
